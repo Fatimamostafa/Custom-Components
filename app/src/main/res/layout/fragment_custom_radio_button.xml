@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    tools:context="com.example.farwa.customcomponents.Fragments.CustomRadioButtonFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Radio Button"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorHeading"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RadioGroup
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/radio_btn_bg"
+        android:weightSum="3">
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_radio_button"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="All"
+            android:textColor="@drawable/radio_btn_text_color_selector" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_radio_button"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Open"
+            android:textColor="@drawable/radio_btn_text_color_selector" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_radio_button"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Close"
+            android:textColor="@drawable/radio_btn_text_color_selector" />
+
+    </RadioGroup>
+
+</RelativeLayout>
